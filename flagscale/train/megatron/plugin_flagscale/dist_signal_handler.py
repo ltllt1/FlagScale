@@ -20,5 +20,5 @@ def get_device(local_rank=None):
     elif backend == 'gloo':
         device = torch.device('cpu')
     else:
-        raise RuntimeError()
+        raise RuntimeError
     return device
